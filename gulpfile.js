@@ -4,6 +4,7 @@ var flatten = require('gulp-flatten');
 var less = require('gulp-less');
 var watch = require('gulp-watch');
 var coffee = require ('gulp-coffee');
+var minifyCSS = require('gulp-minify-css');
 
 // Output dir (static files in docpad)
 var filesDir = './src/files';
@@ -50,6 +51,7 @@ gulp.task('less', function() {
             less()
                 .on('error', console.log)
         )
+        .pipe(minifyCSS())
         .pipe(gulp.dest(filesDir + '/css'))
         .pipe(gulp.dest('./out/css'));
 });
