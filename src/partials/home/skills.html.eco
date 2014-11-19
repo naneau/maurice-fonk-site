@@ -1,0 +1,83 @@
+<section id="skills" >
+    <div class="container">
+        <h2>Skills</h2>
+        <p>
+            The world of the web changes at an incredible
+            pace. Web applications are built using an ever
+            shifting set of languages, frameworks and
+            dogmas. I have had to adapt and learn. This can
+            be a challenge, but one that is both fun and
+            rewarding.
+        </p>
+
+        <div class="skillsets row">
+            <div class="skillset col-md-4">
+                <h3>Engineering</h3>
+                <ul>
+                    <li>Web Application Backends</li>
+                    <li>Web Application Frontends</li>
+                    <li>Real Time Web Communication</li>
+                    <li>Rich User Interfaces</li>
+                    <li>Data Presentation</li>
+                </ul>
+            </div>
+
+            <div class="skillset">
+                <h3>Focussing On</h3>
+                <ul>
+                    <li>Performance</li>
+                    <li>Scalablity</li>
+                    <li>Ergonomics</li>
+                    <li>Maintainability</li>
+                    <li>Usability</li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+
+            <div class="skillset">
+                <h3>Interests</h3>
+                <ul>
+                    <li>Framework and API Design</li>
+                    <li>Domain Modelling</li>
+                    <li>Functional Programming</li>
+                    <li>Requirements Engineering</li>
+                    <li>High Performance Publishing</li>
+                </ul>
+            </div>
+
+            <div class="skillset col-md-4">
+                <h3>Publishing</h3>
+                <ul>
+                    <li>Dynamic Content</li>
+                    <li>Responsive Layouts</li>
+                    <li>Relational Content Management</li>
+                    <li>Search Engine Optimization</li>
+                    <li>Content Structuring</li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+
+            <div class="skillset">
+                <h3>Optimizing</h3>
+                <ul>
+                    <li>Web Server Performance</li>
+                    <li>Static Content</li>
+                    <li>Dynamic Frontends</li>
+                    <li>Cache Layers</li>
+                    <li>HTTP Request Flow</li>
+                </ul>
+            </div>
+
+            <div class="skillset">
+                <h3>Engaging</h3>
+                <ul>
+                    <li>Engage Actors</li>
+                    <li>Find Requirements</li>
+                    <li>Organize and Plan</li>
+                    <li>Iterate and Deliver</li>
+                    <li>Create Prototypes/Mockups</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+---
+title: "Blog"
+layout: "blog"
+isPage: true
+index: 3
+---
+<section id="blog-overview">
+    <div class="sections">
+        <div class="section tech">
+            <h2>Tech Blog</h2>
+            <p>
+                My views on technology.
+            </p>
+            <ul>
+                <% for page in @getCollection("techBlog").toJSON(): %>
+                    <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+                        <a href="<%= page.url %>">
+                            <%= page.title %>
+                        </a>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+
+        <div class="section personal">
+            <h2>Personal Blog</h2>
+            <p>
+                My personal feelings and ramblings. To be taken with a grain of salt.
+            </p>
+            <ul>
+                <% for page in @getCollection("personalBlog").toJSON(): %>
+                    <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+                        <a href="<%= page.url %>">
+                            <%= page.title %>
+                        </a>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</section>

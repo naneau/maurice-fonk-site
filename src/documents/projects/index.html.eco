@@ -1,0 +1,170 @@
+---
+title: "Projects"
+layout: "titled"
+isPage: true
+index: 2
+projects:
+    -
+        name: SemVer
+        language: php
+        url: https://github.com/naneau/semver
+        description: A Semantic Version parser with a decent API
+        badges:
+            -
+                name: Travis CI Build Status
+                image: https://travis-ci.org/naneau/semver.png?branch=master
+                url: https://travis-ci.org/naneau/semver
+            -
+                name: Sensio Labs Insight
+                image: https://insight.sensiolabs.com/projects/fa3d9982-f1f9-4637-84f2-c3ac460676c7/mini.png
+                url: https://insight.sensiolabs.com/projects/fa3d9982-f1f9-4637-84f2-c3ac460676c7
+            -
+                name: Scrutinizer Quality Score
+                image: https://scrutinizer-ci.com/g/naneau/semver/badges/quality-score.png?s=0d9f184ab5456eab3c9222fd2f53e1defd43d117
+                url: https://scrutinizer-ci.com/g/naneau/semver/
+            -
+                name: Code Coverage
+                image: https://scrutinizer-ci.com/g/naneau/semver/badges/coverage.png?s=d292f21ffe198272dfc0d96f78750704644d6473
+                url: https://scrutinizer-ci.com/g/naneau/semver/
+    -
+        name: Gunther
+        language: coffeescript
+        url: https://github.com/naneau/gunther
+        description: A functionally-reactive templating language for Backbone.js
+        badges:
+            -
+                name: Build Status
+                image: https://travis-ci.org/AngryBytes/hash.svg?branch=master
+                url: https://travis-ci.org/AngryBytes/hash
+    -
+        name: FileGen
+        language: php
+        url: https://github.com/naneau/filegen
+        description: A file/directory generation library
+        badges:
+            -
+                name: Build Status
+                image: https://travis-ci.org/naneau/filegen.svg?branch=master
+                url: https://travis-ci.org/naneau/filegen
+            -
+                name: SensioLabsInsight
+                image: https://insight.sensiolabs.com/projects/45ba109e-f456-469c-8cf2-fb621fa3c069/mini.png
+                url: https://insight.sensiolabs.com/projects/45ba109e-f456-469c-8cf2-fb621fa3c069
+            -
+                name: Scrutinizer Code Quality
+                image: https://scrutinizer-ci.com/g/naneau/filegen/badges/quality-score.png?b=master
+                url: https://scrutinizer-ci.com/g/naneau/filegen/?branch=master
+
+    -
+        name: Project Versioner
+        language: php
+        url: https://github.com/naneau/php-project-versioner
+        description: Finds a "version" for any type of project, using the file system, Git or other readers.
+        badges:
+            -
+                name: Latest Stable Version
+                image: https://poser.pugx.org/naneau/project-versioner/v/stable.svg
+                url: https://packagist.org/packages/naneau/project-versioner
+            -
+                name: Build Status
+                image: https://travis-ci.org/naneau/php-project-versioner.svg?branch=master
+                url: https://travis-ci.org/naneau/php-project-versioner
+            -
+                name: Scrutinizer Code Quality
+                image: https://scrutinizer-ci.com/g/naneau/php-project-versioner/badges/quality-score.png?b=master
+                url: https://scrutinizer-ci.com/g/naneau/php-project-versioner/?branch=master
+
+    -
+        name: Obfuscator
+        language: php
+        url: https://github.com/naneau/php-obfuscator
+        description: Obfuscates PHP code
+        badges:
+            -
+                name:  Scrutinizer Code Quality
+                image: https://scrutinizer-ci.com/g/naneau/php-obfuscator/badges/quality-score.png?b=master
+                url: https://scrutinizer-ci.com/g/naneau/php-obfuscator/?branch=master
+
+    -
+        name: Maybe
+        language: php
+        url: https://github.com/naneau/maybe
+        description: Working around PHP's error handling shortcomings
+        badges: []
+
+    -
+        name: Hash
+        language: php
+        url: https://github.com/naneau/hash
+        description: A simple PHP library that simplifies cryptographical hashing. It provides an object oriented interface to a variety of hashing methods.
+        badges:
+            -
+                name: Build Status
+                image: https://travis-ci.org/AngryBytes/hash.svg?branch=master
+                url: https://travis-ci.org/AngryBytes/hash
+            -
+                name: Scrutinizer Code Quality
+                image: https://scrutinizer-ci.com/g/AngryBytes/hash/badges/quality-score.png?b=master
+                url: https://scrutinizer-ci.com/g/AngryBytes/hash/?branch=master
+    -
+        name: DomainObject
+        language: php
+        url: https://github.com/naneau/domainobject
+        description: A generic DomainObject base class
+        badges:
+            -
+                name: Build Status
+                image: https://travis-ci.org/AngryBytes/domainobject.svg?branch=master
+                url: https://travis-ci.org/AngryBytes/domainobject
+            -
+                name: Scrutinizer Code Quality
+                image: https://scrutinizer-ci.com/g/AngryBytes/domainobject/badges/quality-score.png?b=master
+                url: https://scrutinizer-ci.com/g/AngryBytes/domainobject/?branch=master
+
+projectSmallColumns: 2
+projectMediumColumns: 2
+projectColumns: 3
+---
+
+<% projectArticle = (project) => %>
+<article class="project <%= project.language %>">
+    <h1>
+        <a href="<%= project.url %>">
+            <%= project.name %>
+        </a>
+    </h1>
+    <ul class="badges">
+        <% for badge in project.badges: %>
+        <li>
+            <a href="<%= badge.url %>">
+                <img src="<%= badge.image %>" alt="<%= badge.name %>">
+            </a>
+        </li>
+        <% end %>
+    </ul>
+    <p>
+        <%= project.description %>
+    </p>
+</article>
+<% end %>
+
+<section id="projects">
+    <h1>Open Source Projects</h1>
+
+    <div class="row">
+    <% for index, project of @document.projects: %>
+
+        <% if index %% @document.projectSmallColumns is 0: %>
+        <div class="clearfix visible-xs-block"></div>
+        <% end %>
+        <% if index %% @document.projectMediumColumns is 0: %>
+        <div class="clearfix visible-sm-block"></div>
+        <% end %>
+        <% if index %% @document.projectColumns is 0: %>
+        <div class="clearfix hidden-sm hidden-xs"></div>
+        <% end %>
+
+        <%= projectArticle project %>
+
+    <% end %>
+</section>

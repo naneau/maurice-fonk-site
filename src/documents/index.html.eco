@@ -1,0 +1,15 @@
+---
+title: "Web Application Engineer"
+layout: "root"
+isPage: true
+index: 0
+---
+<section id="cv">
+
+    <%- @partial('home/intro') %>
+    <%- @partial('home/skills') %>
+    <%- @partial('home/languages') %>
+    <%- @partial('home/real-languages') %>
+    <%- @partial('home/for-hire') %>
+
+</section>

@@ -1,0 +1,47 @@
+// Contact banner at bottom
+#contact {
+    background-color: @contact-bg;
+    color: @contact-color;
+    margin-top: 3 * @padding-large-vertical;
+    padding-top: 2 * @padding-large-vertical;
+    padding-bottom: 2 * @padding-large-vertical;
+
+    .title {
+        a {
+            .h1;
+            color: @contact-color;
+        }
+        padding-bottom: @padding-large-vertical;
+        margin-bottom: @padding-large-vertical;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    ul {
+        .list-unstyled;
+        li {
+            a {
+                color: @contact-color-link;
+            }
+            .fa {
+                color: @contact-color-highlight;
+            }
+        }
+    }
+
+    // Inner container
+    .contact-inner {
+        .container;
+        .column {
+            .make-md-column(6);
+
+            // Inner row/column
+            .row {
+                .column {
+                    .make-md-column(6);
+                }
+            }
+        }
+    }
+
+}

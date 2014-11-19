@@ -1,0 +1,74 @@
+<section id="contact">
+    <div class="contact-inner">
+        <div class="row">
+            <div class="column">
+                <p class="title">
+                    <a href="http://naneau.net/">
+                        Maurice Fonk
+                    </a>
+                </p>
+                <ul>
+                    <% for item in @menuItems: %>
+                    <li>
+                        <i class="fa fa-file-o"></i>
+                        <a href="<%= item.url %>"><%= item.title %></a>
+                    </li>
+                    <% end %>
+                </ul>
+            </div>
+            <div class="column">
+                <p class="title">
+                    <a href="http://naneau.net/">
+                        Contact Me
+                    </a>
+                </p>
+                <div class="row">
+                    <div class="column">
+                        <ul>
+                            <li id="web">
+                                <a href="/">
+                                    <i class="fa fa-home"></i>
+                                    http://naneau.net/
+                                </a>
+                            </li>
+                            <li id="mail">
+                                <a href="mailto:maurice@mauricefonk.com">
+                                    <i class="fa fa-envelope"></i>
+                                    maurice@naneau.net
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://github.com/naneau">
+                                    <i class="fa fa-github"></i>
+                                    GitHub
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <a href="http://careers.stackoverflow.com/cv/employer/245027">
+                                    <i class="fa fa-stack-exchange"></i>
+                                    StackExchange Careers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com/naneau">
+                                    <i class="fa fa-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/profile/view?id=13798167&amp;trk=tab_pro">
+                                    <i class="fa fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

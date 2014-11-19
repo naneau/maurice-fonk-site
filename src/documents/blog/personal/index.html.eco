@@ -1,0 +1,25 @@
+---
+title: "Personal"
+layout: "blog"
+isPage: true
+isIndex: true
+---
+<section id="blog">
+    <hgroup id="main-titles">
+        <h1>
+            <span class="first-name">Maurice</span>
+            <span class="last-name">Fonk</span>
+        </h1>
+        <h2>Blog</h2>
+    </hgroup>
+
+    <ul>
+        <% for page in @getCollection("blog").toJSON(): %>
+            <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+                <a href="<%= page.url %>">
+                    <%= page.title %>
+                </a>
+            </li>
+        <% end %>
+    </ul>
+</section>

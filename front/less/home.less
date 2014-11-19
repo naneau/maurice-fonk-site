@@ -1,0 +1,198 @@
+#main-titles {
+    h1 {}
+    h2 {
+        .h4;
+    }
+    display: block;
+}
+#intro {
+    .wrapper {
+        .make-row();
+        .intro {
+            .make-md-column(6);
+        }
+        .details {
+            img {
+                .img-circle;
+            }
+            .make-md-column(6);
+            .row {
+                .make-row();
+                .column {
+                    &:first-child {
+                        .make-sm-column(6);
+                    }
+                    &:last-child {
+                        .make-sm-column(6);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// Quote container, full width
+#hire-me {
+    background-color: @lightest-yellow;
+    border-bottom: 3px solid @light-yellow;
+    padding: @padding-large-vertical 0;
+    font-family: @font-family-serif;
+    img {
+        .img-circle;
+        width: 130px;
+        border: 3px solid @light-yellow;
+        float: left;
+        margin-right: 2 * @padding-large-horizontal;
+    }
+    h2 {
+    font-family: @font-family-serif;
+    }
+    p {
+    }
+}
+
+#skills {
+    .skillsets {
+        .make-row();
+        .skillset {
+            .make-xs-column(6);
+            .make-sm-column(4);
+            ul {
+                .list-unstyled;
+                li {
+                    &:before {
+                        color: @blue;
+                        content: "» ";
+                    }
+                }
+            }
+        }
+    }
+}
+
+#languages {
+    background-color: @languages-bg;
+    padding-top: @padding-large-vertical;
+    padding-bottom: @padding-large-vertical;
+
+    h2 {}
+    h3 {
+        margin: 0;
+        color: @languages-color-highlight;
+    }
+    p {}
+    .row {
+        .make-row();
+        .column {
+            .make-md-column(6);
+        }
+    }
+    .tech-group {
+        .make-row();
+        margin-bottom: @padding-large-vertical;
+        padding-bottom: @padding-large-vertical;
+        padding: @padding-large-vertical 0;
+
+        .tech-title {
+            .make-md-column(4);
+            p {
+                color: @languages-color;
+            }
+        }
+        .tech-list {
+            .make-md-column(8);
+            a {
+                color: @languages-color;
+            }
+            ul {
+                .list-inline;
+                li {
+                    padding: 0;
+                    color: inherit;
+                    &:after {
+                        color: @languages-color-light;
+                        content: "& ";
+                    }
+                    &:last-child:after {
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: @screen-md-min) {
+    #languages {
+        .tech-title {
+            height: 130px;
+            border-right: 3px solid @languages-border-color;
+        }
+    }
+}
+
+#responsibilities {
+    .row {
+        .make-row();
+        .column {
+            .make-sm-column(4);
+        }
+    }
+    .chart-wrapper {
+        .chart {
+            .make-md-column(6);
+            canvas {}
+        }
+        .legend {
+            .make-md-column(6);
+            ul {
+                .list-unstyled;
+            }
+            span {
+                display: block;
+                float: left;
+                margin-top: @padding-base-vertical;
+                margin-right: @padding-base-horizontal;
+                border-radius: @border-radius-base;
+                width: @padding-large-horizontal;
+                height: @padding-large-horizontal;
+                background-color: @blue;
+            }
+        }
+    }
+}
+
+#new-challenge {
+    .container;
+}
+#bi-lingual {
+    .container;
+    h2 {}
+    .intro {}
+    .language-stats {
+        .make-row();
+        .language {
+            .make-xs-column(6);
+            .make-sm-column(3);
+            margin-bottom: @padding-large-vertical;
+            h3 {
+                .h4;
+                line-height: 1em;
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                color: @light-blue;
+                margin: 0;
+            }
+            ul {
+                .list-inline;
+                margin: 0;
+                li {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

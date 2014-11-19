@@ -1,0 +1,19 @@
+---
+layout: "default"
+---
+
+<hgroup id="main-titles">
+    <div class="container">
+        <h1>
+            <span class="first-name">Maurice</span>
+            <span class="last-name">Fonk</span>
+        </h1>
+        <h2><%= @document.title %></h2>
+    </div>
+</hgroup>
+
+<div id="titled-page">
+    <div class="container">
+        <%- @content %>
+    </div>
+</div>

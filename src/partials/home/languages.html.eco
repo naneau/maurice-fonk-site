@@ -1,0 +1,38 @@
+<section id="languages">
+    <div class="container">
+        <h2>
+            Languages And Frameworks
+        </h2>
+        <p>
+            There are so many languages, frameworks and technologies powering
+            the modern web, that even listing them is hard. The following is a
+            collection of tools, languages, and frameworks I work with - or in
+            - on a daily basis.
+        </p>
+
+        <div class="row">
+            <div class="column">
+                <%- @partial('home/languages/languages') %>
+            </div>
+            <div class="column">
+                <%- @partial('home/languages/platforms') %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <%- @partial('home/languages/backend') %>
+            </div>
+            <div class="column">
+                <%- @partial('home/languages/frontend') %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <%- @partial('home/languages/storage') %>
+            </div>
+            <div class="column">
+                <%- @partial('home/languages/supporting') %>
+            </div>
+        </div>
+    </div>
+</section>

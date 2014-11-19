@@ -1,0 +1,12 @@
+
+# DocPad output dir
+out
+
+# Bower and NPM
+front/bower_components
+node_modules
+
+# Deploy script
+deploy.sh
+.deployignore
+.env

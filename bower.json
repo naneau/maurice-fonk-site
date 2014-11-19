@@ -1,0 +1,25 @@
+{
+  "name": "mauricefonk-docpad",
+  "version": "0.0.0",
+  "authors": [
+    "Maurice Fonk <maurice@naneau.net>"
+  ],
+  "description": "naneau.net",
+  "homepage": "https://naneau.net",
+  "private": true,
+  "license": "Proprietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/bower_components",
+    "test",
+    "tests",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3",
+    "jquery": "~2.1",
+    "font-awesome": "~4",
+    "font-mfizz": "~2.0"
+  }
+}

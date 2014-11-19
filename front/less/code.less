@@ -1,0 +1,53 @@
+pre.highlight, pre.higlight code {
+    background-color: lighten(@lightest-yellow, 6%);
+    border: 1px solid @lightest-yellow;
+}
+
+.hljs {
+    color: @blue;
+
+    .hljs-comment, .hljs-template_comment, .hljs-doctype, .hljs-pi, .lisp
+    .hljs-string, .hljs-javadoc {
+        color: @lightest-blue;
+    }
+
+    .hljs-keyword, .hljs-winutils, .method, .hljs-addition, .hljs-request,
+    .hljs-status {
+        color: @yellow;
+    }
+
+    .hljs-number, .hljs-command, .hljs-string, .hljs-tag .hljs-value,
+    .hljs-rules .hljs-value, .hljs-phpdoc, .tex .hljs-formula, .hljs-regexp,
+    .hljs-hexcolor, .hljs-link_url {
+        color: @red;
+    }
+
+    .hljs-title, .hljs-localvars, .hljs-chunk, .hljs-decorator, .hljs-built_in,
+    .hljs-identifier, .vhdl .hljs-literal, .hljs-id, .css .hljs-function {
+        color: @dark-blue;
+        font-weight: bold;
+    }
+
+    .hljs-attribute, .hljs-variable, .lisp .hljs-body, .hljs-constant,
+    .hljs-parent, .hljs-type, .hljs-link_reference {
+        color: @red;
+    }
+
+    .hljs-preprocessor, .hljs-preprocessor .hljs-keyword, .hljs-pragma,
+    .hljs-shebang, .hljs-symbol, .hljs-symbol .hljs-string, .hljs-change,
+    .hljs-special, .hljs-attr_selector, .hljs-subst, .hljs-cdata, .hljs-pseudo,
+    .hljs-header {
+        color: @red;
+        font-weight: bold;
+    }
+
+    .hljs-deletion, .hljs-important {
+        color: @red;
+    }
+
+    .hljs-link_label {
+        color: @blue;
+    }
+
+    .tex .hljs-formula {}
+}
